@@ -1,0 +1,131 @@
+/* Hero Section */
+.dayview__hero {
+  background-image: url('../images/pega-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  padding: 20px;
+  position: relative;
+}
+
+.dayview__hero-container {
+  position: relative;
+  height: 100%;
+}
+
+.dayview__hero-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.dayview__back-to-agenda {
+  position: absolute;
+  top: -5px;
+  left: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.dayview__back-to-agenda:hover {
+  text-decoration: underline;
+}
+
+.dayview__title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.dayview__day-title {
+  font-size: 50px;
+  line-height: 0.8;
+  font-family: var(--font-family-headers);
+  font-weight: var(--font-weight-header-bold);
+  color: white;
+  margin: 0;
+}
+
+.dayview__date-title {
+  font-size: 22px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin: 5px 0 0;
+}
+
+/* Container for the schedule */
+.dayview__schedule-container {
+  background-color: var(--white);
+  padding: 80px 0 40px;
+}
+
+.dayview__schedule-title {
+  font-size: 32px;
+  font-family: var(--font-family-headers);
+  font-weight: var(--font-weight-header-bold);
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.dayview__dropdown {
+  margin-top: 10px;
+  margin-left: auto;
+}
+
+.dayview__event-dropdown {
+  margin-bottom: 30px;
+}
+
+/* Previous and Next Day buttons */
+.dayview__nav-buttons {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 12px;
+  margin: 0;
+  bottom: -39px;
+  left: 0;
+}
+
+.dayview__nav-button {
+  background: var(--yellow);
+  font-family: var(--font-family-headers);
+  color: var(--black);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dayview__nav-button[disabled] {
+  background: var(--gray);
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .dayview__hero {
+    padding: 0;
+  }
+
+  .dayview__back-to-agenda {
+    top: 15px;
+  }
+
+  .dayview__hero-layout {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .dayview__dropdown {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .dayview__nav-buttons {
+    bottom: -24px;
+  }
+}

@@ -1,0 +1,19 @@
+@import './variables.css';
+@import './components.css';
+
+/* Additional global styles can go here */
+body {
+  font-family: var(--font-family-body);
+  background: linear-gradient(to bottom, var(--navy-dark), var(--navy));
+  margin: 0;
+  padding: 0;
+}
+
+body.dayview-page {
+  background: var(--white);
+}
+
+.app__container {
+  min-height: 100vh;
+  width: 100%;
+}

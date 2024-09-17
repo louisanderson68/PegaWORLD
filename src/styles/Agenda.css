@@ -1,0 +1,271 @@
+/* Hero Section */
+.agenda__hero {
+  background-image: url('../images/pega-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  padding: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.agenda__hero-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.agenda__title-container {
+  flex: 1;
+}
+
+.agenda__title {
+  font-size: 40px;
+  color: white;
+  margin: 0;
+}
+
+.agenda__subtitle {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 0;
+}
+
+.agenda__filter-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.agenda__filter-label {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.agenda__filter-dropdown {
+  margin-left: auto;
+}
+
+/* Category color box in dropdown */
+.category-color-box {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+
+/* Colors for each category */
+.category-travel_registration .category-color-box {
+  background-color: var(--teal-light);
+}
+
+.category-main_conference .category-color-box {
+  background-color: var(--orange);
+}
+
+.category-other .category-color-box {
+  background-color: var(--gray-dark);
+}
+
+.category-breaks_meals .category-color-box {
+  background-color: var(--yellow);
+}
+
+.category-customer_centricity .category-color-box {
+  background-color: var(--error);
+}
+
+.category-user_centered_design .category-color-box {
+  background-color: var(--pink);
+}
+
+.category-mobile .category-color-box {
+  background-color: var(--violet);
+}
+
+/* Block: agenda, Element: container, row, column */
+.agenda__container {
+  padding: 0 1.5rem 60px;
+  margin-right: 30px;
+  overflow-x: auto;
+  white-space: nowrap;
+  font-family: var(--font-family-body);
+}
+
+.agenda__title {
+  padding-top: 30px;
+  font-size: 50px;
+  margin: 0;
+  color: var(--white);
+  font-family: var(--font-family-headers);
+  font-weight: var(--font-weight-header-bold);
+}
+
+.agenda__subtitle {
+  margin-bottom: 32px;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.agenda__row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  white-space: nowrap;
+}
+
+.agenda__column {
+  display: inline-block;
+  margin-right: 25px;
+  white-space: normal;
+}
+
+.agenda__column-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.agenda__column-title {
+  margin-bottom: 0;
+  color: var(--white);
+  font-family: var(--font-family-headers);
+  font-weight: var(--font-weight-header-bold);
+  font-size: 20px;
+}
+
+/* Styles for handling central and two-column layout */
+.agenda__row-full-width {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-basis: 100%;
+}
+
+.agenda__row-two-column {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.agenda__track-column {
+  flex: 0 0 48%;
+}
+
+.agenda__event-central {
+  flex: 1 0 100%;
+}
+
+/* Styling the desktop view for Wednesday's tracks */
+.agenda__wednesday-tracks {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.agenda__track-column {
+  flex: 1;
+  margin: 0;
+}
+
+/* Accordion styles for mobile view */
+.accordion-collapse .agenda__accordion-body {
+  padding: 1.5rem 15px;
+  background: var(--navy-dark);
+}
+
+.accordion-collapse .agenda__accordion-body-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.accordion-collapse .agenda__accordion-body-title {
+  margin: 0;
+  font-family: var(--font-family-headers);
+  font-weight: var(--font-weight-header-bold);
+  color: var(--white);
+  font-size: 26px;
+}
+
+.agenda__accordion-button button {
+  font-family: var(--font-family-headers);
+  font-size: 1.25rem;
+  background-color: var(--yellow);
+  color: var(--black);
+  border-radius: 0;
+}
+
+.agenda__accordion-button button:not(.collapsed) {
+  background: var(--yellow-dark);
+  box-shadow: none;
+  color: var(--black);
+}
+
+.agenda__accordion-item:first-of-type>.agenda__accordion-button>button,
+.agenda__accordion-item:last-of-type>.agenda__accordion-button>button {
+  border-radius: 0 !important;
+}
+
+.agenda__accordion .agenda__accordion-item,
+.agenda__accordion .agenda__accordion-item:first-of-type,
+.agenda__accordion .agenda__accordion-item:last-of-type {
+  border-radius: 0;
+  border-color: var(--black);
+}
+
+/* New button styling to override Bootstrap */
+.agenda__button {
+  background-color: var(--yellow);
+  color: var(--black);
+  border-radius: 0;
+  width: 100%;
+  padding: 8px 16px;
+  font-size: 1rem;
+}
+
+.agenda__button--no-radius {
+  border-radius: 0 !important;
+}
+
+.agenda__button--full-width {
+  width: 100%;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .agenda__hero {
+    height: auto;
+    padding: 1.5rem 15px;
+  }
+
+  .agenda__mobile-wrapper {
+    padding: 0 15px 50px;
+  }
+
+  .agenda__title {
+    padding-top: 0;
+  }
+
+  .agenda__hero-layout {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .agenda__filter-wrapper {
+    width: 100%;
+  }
+
+  .agenda__filter-dropdown {
+    width: 100%;
+  }
+}
+

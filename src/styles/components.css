@@ -1,0 +1,104 @@
+/*BUTTONS*/
+.btn-yellow {
+  border-radius: 25px;
+  font-size: 14px;
+  background-color: var(--yellow);
+  color: var(--black);
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+}
+
+.btn-yellow:hover {
+  background-color: var(--yellow-dark);
+  color: var(--black);
+}
+
+.btn-small {
+  padding: 6px 12px;
+}
+
+/*PEGA Dropdown*/
+.pega__dropdown-label {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
+}
+
+.pega__dropdown-toggle {
+  font-family: var(--font-family-headers);
+  color: var(--white);
+  background-color: var(--orange); 
+  border-radius: 0; 
+  border: 1px solid var(--orange); 
+  padding: 8px 16px; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pega__dropdown-toggle:hover,
+.pega__dropdown-toggle:focus,
+.pega__dropdown-toggle[aria-expanded="true"] {
+  background-color: var(--orange-dark); 
+  color: var(--white); 
+  border-color: var(--orange-dark); 
+  outline: none; 
+}
+
+.pega__dropdown-menu {
+  background-color: var(--white); 
+  border: 1px solid var(--gray-light); 
+  border-radius: 0; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 0; 
+}
+
+.pega__dropdown-item {
+  padding: 12px 16px; 
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+  color: var(--indigo-dark); 
+  background-color: var(--white); 
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pega__dropdown-item:hover,
+.pega__dropdown-item:focus,
+.pega__dropdown-item.active {
+  background-color: var(--teal-light); 
+  color: var(--indigo-dark); 
+  outline: none; 
+}
+
+.pega__dropdown-item:disabled {
+  background-color: var(--gray-light); 
+  color: var(--gray-dark); 
+  cursor: not-allowed; 
+}
+
+.pega__dropdown-toggle::after {
+  margin-left: 10px;
+  color: var(--white); 
+  transition: transform 0.3s ease;
+}
+
+.pega__dropdown-toggle[aria-expanded="true"]::after {
+  transform: rotate(180deg); 
+}
+
+@media (max-width: 768px) {
+  .pega__dropdown-toggle {
+    padding: 10px 12px;
+  }
+  .pega__dropdown-item {
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .pega__dropdown-toggle {
+    width: 100%;
+  }
+}

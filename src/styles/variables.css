@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700&family=Big+Shoulders+Display:wght@800&display=swap');
+
+:root {
+  /* Indigo Colors */
+  --indigo-xdark: #091734;
+  --indigo-dark: #081c45;
+  --indigo: #001f5f;
+  --indigo-light: #3e67bb;
+  --indigo-xlight: #abc2f2;
+
+  /* Navy Colors */
+  --navy-xdark: #091734;
+  --navy-dark: #081c45;
+  --navy: #001f5f;
+  --navy-light: #3e67bb;
+  --navy-xlight: #abc2f2;
+
+  /* Teal Colors */
+  --teal-xdark: #005154;
+  --teal-dark: #0a6266;
+  --teal: #10a5ac;
+  --teal-light: #86cac6;
+  --teal-xlight: #b7e4e6;
+
+  /* Orange Colors */
+  --orange-dark: #c74200;
+  --orange: #f76923;
+  --orange-light: #ff9866;
+
+  /* Yellow Colors */
+  --yellow-dark: #e8af17;
+  --yellow: #ffc836;
+  --yellow-light: #ffe399;
+
+  /* Additional Colors */
+  --wine: #661d34;
+  --pink: #e63690;
+  --berry: #ac1361;
+  --violet: #5f67b9;
+
+  /* Gray Colors */
+  --gray-xdark: #2e2e33;
+  --gray-dark: #5c5d66;
+  --gray: #8d8e99;
+  --gray-light: #e0e2eb;
+  --gray-xlight: #f6f6f9;
+
+  /* Neutral Colors */
+  --black: #151619;
+  --white: #fff;
+
+  /* Info Colors */
+  --info-dark: #004880;
+  --info: #0076d1;
+  --info-light: #d6edff;
+
+  /* Success Colors */
+  --success-dark: #256940;
+  --success: #357e38;
+  --success-light: #dbf0dc;
+
+  /* Error Colors */
+  --error-dark: #9d2315;
+  --error: #b42818;
+  --error-light: #fad5d1;
+
+  /* Warning Colors */
+  --warning-dark: #cfb317;
+  --warning: #e8cd30;
+  --warning-light: #faf4d1;
+
+  /* Social Colors */
+  --social-facebook: #3a579c;
+  --social-x: #0f1419;
+  --social-linkedin: #0476b4;
+
+  /* Font Variables */
+  --font-family-body: 'Roboto', sans-serif;
+  --font-family-headers: 'Big Shoulders Display', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-header-bold: 800;
+}
